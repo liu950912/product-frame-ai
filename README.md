@@ -1,171 +1,152 @@
 # 产品智构
 
-🚀 AI驱动的产品管理平台，帮助产品经理高效管理产品结构、需求文档，并通过AI辅助生成PRD和UI原型。
+**面向产品经理的 AI 辅助设计工具** —— 从需求到 PRD 到 UI 原型，一站式完成。
 
-## ✨ 功能特性
+## 产品定位
 
-### 📊 产品框架管理
-- 多项目、多版本管理
-- 三级结构：端 → 模块 → 页面
-- 支持端类型：APP / 小程序 / PC
-- 拖拽排序、右键菜单快捷操作
+产品经理在日常工作中面临诸多痛点：
+- 写 PRD 耗时费力，格式不统一
+- 需求变更追踪困难，版本管理混乱
+- 产品结构与开发实现存在断层
+- UI 原型沟通成本高
+
+**产品智构** 致力于解决这些问题，通过 AI 辅助，让产品经理专注于**思考**而非**文档编写**。
+
+## 核心价值
+
+| 场景 | 传统方式 | 产品智构 |
+|------|----------|----------|
+| 写 PRD | 从空白文档开始，耗时 2-4 小时 | AI 根据产品结构自动生成，10 分钟完成 |
+| 需求变更 | 手动记录，容易遗漏 | 自动分析影响范围，标记变更内容 |
+| 业务逻辑 | 散落在各处文档 | 结构化管理，AI 智能补全 |
+| UI 沟通 | 截图+文字描述 | AI 生成原型代码，所见即所得 |
+
+## 功能特性
+
+### 📊 产品结构管理
+
+建立清晰的产品骨架：项目 → 版本 → 端 → 模块 → 页面
+
+- **多项目管理**：同时维护多个产品
+- **版本演进**：新版本自动继承上一版本，已删除内容自动清理
+- **三级结构**：端（APP/小程序/PC）→ 模块 → 页面
+- **拖拽排序**：灵活调整结构顺序
 
 ### 📝 页面内容管理
 
 #### 元素管理
-- 分区域组织页面元素
-- 支持40种元素类型
-- 交互行为设置（跳转、弹窗、提交等）
-- 关联目标页面
+- 分区域组织页面元素（顶部、内容区、底部等）
+- 40+ 元素类型（按钮、输入框、列表、卡片等）
+- 交互行为设置（跳转、弹窗、提交、分享等）
 
 #### 业务逻辑
-6种逻辑类型，全面覆盖页面业务需求：
+6 种逻辑类型，结构化管理页面业务：
 
-| 类型 | 说明 |
-|------|------|
-| 业务场景 | 不同条件下的页面表现（如：待支付、已完成、已取消） |
-| 校验规则 | 表单字段校验逻辑（如：必填、格式、长度） |
-| 接口定义 | 页面需要的API接口参数和返回值 |
-| 状态流转 | 页面状态变化逻辑 |
-| 权限控制 | 不同角色的操作权限 |
-| 埋点需求 | 用户行为追踪事件 |
+| 类型 | 说明 | 示例 |
+|------|------|------|
+| 业务场景 | 页面在不同条件下的表现 | 订单页：待支付、已完成、已取消 |
+| 校验规则 | 表单字段校验逻辑 | 手机号：必填、11位、有效号段 |
+| 接口定义 | 页面需要的 API | 请求参数、返回字段、错误码 |
+| 状态流转 | 页面状态变化逻辑 | 支付成功 → 跳转结果页 |
+| 权限控制 | 不同角色的操作权限 | 普通用户 vs VIP 用户 |
+| 埋点需求 | 用户行为追踪 | 按钮点击、页面曝光 |
 
-**数据来源**：
-- 手动填写
-- AI智能补全（打字机效果实时显示分析过程）
-- 需求驱动生成（从PRD变更分析自动生成）
+**AI 辅助**：根据页面元素和系统其他页面，智能补全业务逻辑。
 
-#### UED模块
-- AI生成UI原型代码
-- 预览/代码/规范三视图
-- 打字机效果实时展示生成过程
-- 代码可编辑
-- 一键导出图片
+#### UED 原型
+- AI 根据页面元素生成 UI 代码
+- 预览/代码双视图
+- 支持导出图片
 
 ### 📋 需求管理
-- 需求创建（标题、描述、优先级、进度）
-- 需求关联产品节点
-- 需求跟随项目/版本切换
 
-### 🤖 AI能力
+- 需求创建与优先级管理
+- 关联产品节点，自动分析影响范围
+- 需求变更追踪，标记新增/修改/删除内容
+
+### 🤖 AI 能力
 
 | 功能 | 说明 |
 |------|------|
-| PRD生成 | 根据需求描述+产品结构自动生成完整PRD文档 |
+| PRD 生成 | 根据需求描述 + 产品结构，自动生成完整 PRD |
 | 变更分析 | 分析需求变更涉及的页面和元素 |
-| 需求范围分析 | 自动分析需求涉及的产品范围 |
-| 业务逻辑补全 | 根据页面元素+系统其他页面逻辑智能生成 |
-| UI生成 | 根据页面元素自动生成前端代码，支持APP/小程序/PC多端适配 |
+| 业务逻辑补全 | 根据页面元素智能生成业务逻辑 |
+| UI 生成 | 根据页面元素生成前端代码 |
 
-### 💾 数据管理
-- LocalStorage本地存储，数据安全
-- 数据备份/恢复（JSON导出导入）
-- Markdown格式导出
+### 💾 数据安全
 
-## 🖼️ 界面预览
+- **本地存储**：数据保存在浏览器 LocalStorage，不上传服务器
+- **导入导出**：JSON 格式备份，随时迁移
+- **Markdown 导出**：PRD 一键导出
 
-> 待补充
+## 快速开始
 
-## 🚀 快速开始
+### 在线体验
 
-### 环境要求
-- Node.js 18+（用于API代理服务）
-- 现代浏览器（Chrome、Firefox、Safari、Edge）
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/liu950912/product-frame-ai)
 
-### 安装步骤
+### 本地运行
 
-1. **克隆项目**
 ```bash
-git clone https://github.com/your-username/product-frame-ai.git
+# 克隆项目
+git clone https://github.com/liu950912/product-frame-ai.git
 cd product-frame-ai
-```
 
-2. **启动API代理服务**（用于AI接口调用）
-```bash
+# 启动 API 代理服务（用于 AI 接口调用）
 node proxy-server.js
-```
 
-3. **打开应用**
-```bash
-# 方式1：直接打开
+# 打开应用
 open index.html
-
-# 方式2：使用本地服务器（推荐）
+# 或使用本地服务器
 npx serve .
-# 然后访问 http://localhost:3000
 ```
 
-4. **配置AI密钥**
-   - 点击左侧边栏「API配置」
-   - 选择AI服务商
-   - 输入API密钥
+### 配置 AI 服务
 
-## 🔧 配置说明
+支持多种 AI 服务商：
 
-### 支持的AI服务商
-
-| 服务商 | 模型 | 获取API Key |
-|--------|------|-------------|
-| Claude | claude-3-opus, claude-3-sonnet | [获取](https://console.anthropic.com/) |
-| 通义千问 | qwen-turbo, qwen-plus | [获取](https://dashscope.console.aliyun.com/) |
+| 服务商 | 推荐模型 | 获取 API Key |
+|--------|----------|--------------|
+| Claude | claude-3-opus | [获取](https://console.anthropic.com/) |
+| 通义千问 | qwen-turbo | [获取](https://dashscope.console.aliyun.com/) |
 | DeepSeek | deepseek-chat | [获取](https://platform.deepseek.com/) |
 | 豆包 | doubao-pro | [获取](https://console.volcengine.com/ark) |
 
-### 自定义API地址
-支持配置自定义API地址，可对接私有部署的AI服务。
-
-## 📖 使用指南
-
-### 创建产品结构
-1. 选择项目 → 新增端（选择APP/小程序/PC类型）
-2. 在端下新增模块
-3. 在模块下新增页面
-4. 在页面中添加元素（40种元素类型）
-
-### 管理业务逻辑
-1. 选择一个页面
-2. 切换到「业务逻辑」标签
-3. 手动添加或点击「AI补全」智能生成
-4. 支持6种逻辑类型：业务场景、校验规则、接口定义、状态流转、权限控制、埋点需求
-
-### 创建需求
-1. 点击右侧「需求」面板的 + 按钮
-2. 填写需求标题、描述、优先级、进度
-3. 关联相关产品节点
-
-### 生成PRD
-1. 点击需求卡片查看详情
-2. 选择涉及的端
-3. 点击「生成PRD」
-4. AI自动生成完整PRD文档
-
-### 生成UI
-1. 选择一个页面
-2. 切换到「UED」标签
-3. 点击「AI生成」
-4. AI根据页面元素和端类型生成UI代码
-
-## 🛠️ 技术栈
+## 技术栈
 
 - **前端**：原生 HTML + CSS + JavaScript
 - **样式**：Tailwind CSS
 - **存储**：LocalStorage
-- **AI调用**：通过本地代理服务转发API请求
-- **Markdown渲染**：marked.js
+- **部署**：Vercel Serverless Functions
 
-## 📁 项目结构
+## 项目结构
 
 ```
 product-frame-ai/
-├── index.html          # 主应用文件
-├── proxy-server.js     # API代理服务
-├── css/
-│   └── styles.css      # 样式文件
-├── LICENSE             # MIT开源协议
+├── index.html          # 主应用
+├── proxy-server.js     # 本地 API 代理
+├── api/                # Vercel Serverless Functions
+│   ├── proxy.js        # 普通 API 代理
+│   └── stream.js       # 流式 API 代理
+├── css/styles.css      # 样式文件
+├── vercel.json         # Vercel 配置
+├── package.json        # 项目配置
+├── LICENSE             # MIT 开源协议
 └── README.md           # 项目说明
 ```
 
-## 🤝 贡献指南
+## 开发计划
+
+- [ ] AI 需求完整性检查
+- [ ] AI 优先级建议
+- [ ] 需求评审清单生成
+- [ ] API 接口文档生成
+- [ ] 测试用例生成
+- [ ] 版本对比视图
+- [ ] 多人协作支持
+- [ ] 国际化支持
+
+## 贡献指南
 
 欢迎提交 Issue 和 Pull Request！
 
@@ -175,63 +156,12 @@ product-frame-ai/
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 提交 Pull Request
 
-## 📝 开发计划
-
-- [ ] AI需求完整性检查
-- [ ] AI优先级建议
-- [ ] 需求评审清单生成
-- [ ] API接口文档生成
-- [ ] 测试用例生成
-- [ ] 业务逻辑关联关系
-- [ ] 版本变更记录
-- [ ] 多人协作支持
-
-## 🚀 部署到 Vercel
-
-### 一键部署
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/product-frame-ai)
-
-### 手动部署
-
-1. **Fork 或 Clone 本项目**
-
-2. **安装 Vercel CLI**
-```bash
-npm i -g vercel
-```
-
-3. **登录 Vercel**
-```bash
-vercel login
-```
-
-4. **部署项目**
-```bash
-vercel
-```
-
-5. **配置默认 API Key（可选）**
-
-编辑 `index.html` 中的 `DEFAULT_API_CONFIG` 常量：
-```javascript
-const DEFAULT_API_CONFIG = {
-    provider: 'your-provider',  // claude, tongyi, deepseek, doubao, xunfei
-    apiKey: 'your-api-key',     // 你的 API Key
-    baseUrl: '',                // 可选，自定义 API 地址
-    model: 'your-model'         // 模型名称
-};
-```
-
-### 环境说明
-
-- **本地开发**：API 请求通过 `proxy-server.js` 代理（需运行 `node proxy-server.js`）
-- **Vercel 部署**：API 请求通过 Serverless Functions 代理（自动适配）
-
-## 📄 License
+## License
 
 本项目基于 [MIT License](LICENSE) 开源。
 
-## 🙏 致谢
+---
 
-感谢所有AI服务商提供的强大能力，让产品工作更加高效。
+**作者**：[刘文超](https://github.com/liu950912)
+
+如果这个项目对你有帮助，欢迎 ⭐ Star 支持！
