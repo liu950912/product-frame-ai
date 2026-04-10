@@ -1,6 +1,9 @@
 # 产品智构
 
 **基于产品框架的版本迭代管理工具** —— 让每一次需求变更都可追溯。
+<img width="1778" height="933" alt="image" src="https://github.com/user-attachments/assets/1c537d0b-9d70-40a6-9e6c-775687b35bb1" />
+<img width="1769" height="919" alt="image" src="https://github.com/user-attachments/assets/e22d63d7-9054-497f-8202-0f65b717c1da" />
+
 
 ## 为什么做这个工具？
 
