@@ -1,0 +1,81 @@
+/* 基础样式 */
+body { font-family: 'Inter', 'Microsoft YaHei', sans-serif; }
+
+/* 弹窗遮罩 */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.4); display: none; align-items: center; justify-content: center; z-index: 100; }
+.modal-overlay.show { display: flex; }
+
+/* Toast提示 */
+.toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); padding: 10px 20px; background: #1f2937; color: white; border-radius: 8px; font-size: 14px; opacity: 0; transition: opacity 0.3s; z-index: 200; }
+.toast.show { opacity: 1; }
+
+/* 分隔条 */
+.resizer { width: 6px; cursor: col-resize; background: transparent; transition: background 0.2s; flex-shrink: 0; }
+.resizer:hover, .resizer.dragging { background: #0ea5e9; }
+
+/* 面板 */
+.panel { overflow: hidden; display: flex; flex-direction: column; }
+
+/* 滚动条 */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
+
+/* 树节点 */
+.tree-node { transition: background 0.15s; border-radius: 8px; }
+.tree-node:hover { background: #f3f4f6; }
+.tree-node.selected { background: #e0f2fe; }
+.tree-node.dragging { opacity: 0.5; }
+.tree-node.drag-over { background: #dbeafe; border: 2px dashed #3b82f6; }
+.tree-node.drag-over-top { box-shadow: inset 0 2px 0 #3b82f6; }
+.tree-node.drag-over-bottom { box-shadow: inset 0 -2px 0 #3b82f6; }
+
+/* 节点操作按钮 */
+.node-action { opacity: 0; transition: opacity 0.15s; }
+.tree-node:hover .node-action { opacity: 1; }
+
+/* 拖拽手柄 */
+.drag-handle { cursor: grab; }
+.drag-handle:active { cursor: grabbing; }
+
+/* 搜索下拉 */
+.search-dropdown { position: absolute; top: 100%; left: 0; right: 0; background: white; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); margin-top: 4px; max-height: 400px; overflow-y: auto; display: none; z-index: 50; }
+.search-dropdown.show { display: block; }
+.search-item { padding: 10px 16px; cursor: pointer; display: flex; align-items: center; gap: 10px; transition: background 0.15s; }
+.search-item:hover { background: #f3f4f6; }
+.search-item:first-child { border-radius: 12px 12px 0 0; }
+.search-item:last-child { border-radius: 0 0 12px 12px; }
+.search-highlight { background: #fef3c7; padding: 0 2px; border-radius: 2px; }
+
+/* 右键菜单 */
+.context-menu { position: fixed; background: white; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); padding: 6px; min-width: 160px; z-index: 100; display: none; }
+.context-menu.show { display: block; }
+.context-menu-item { padding: 8px 12px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; gap: 10px; font-size: 14px; color: #374151; transition: all 0.15s; }
+.context-menu-item:hover { background: #f3f4f6; }
+.context-menu-item.danger { color: #ef4444; }
+.context-menu-item.danger:hover { background: #fef2f2; }
+.context-menu-divider { height: 1px; background: #e5e7eb; margin: 4px 0; }
+
+/* Markdown样式 */
+.markdown-body { line-height: 1.7; color: #374151; }
+.markdown-body h1 { font-size: 1.5rem; font-weight: 600; margin: 1.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #e5e7eb; }
+.markdown-body h2 { font-size: 1.25rem; font-weight: 600; margin: 1.25rem 0 0.75rem; color: #1f2937; }
+.markdown-body h3 { font-size: 1.1rem; font-weight: 600; margin: 1rem 0 0.5rem; color: #374151; }
+.markdown-body h4 { font-size: 1rem; font-weight: 600; margin: 0.75rem 0 0.5rem; }
+.markdown-body p { margin: 0.75rem 0; }
+.markdown-body ul, .markdown-body ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+.markdown-body li { margin: 0.25rem 0; }
+.markdown-body ul { list-style-type: disc; }
+.markdown-body ol { list-style-type: decimal; }
+.markdown-body code { background: #f3f4f6; padding: 0.125rem 0.375rem; border-radius: 0.25rem; font-size: 0.875rem; font-family: ui-monospace, monospace; }
+.markdown-body pre { background: #1f2937; color: #e5e7eb; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0; }
+.markdown-body pre code { background: transparent; padding: 0; color: inherit; }
+.markdown-body blockquote { border-left: 4px solid #d1d5db; padding-left: 1rem; margin: 1rem 0; color: #6b7280; }
+.markdown-body table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.markdown-body th, .markdown-body td { border: 1px solid #e5e7eb; padding: 0.5rem 0.75rem; text-align: left; }
+.markdown-body th { background: #f9fafb; font-weight: 500; }
+.markdown-body hr { border: none; border-top: 1px solid #e5e7eb; margin: 1.5rem 0; }
+.markdown-body strong { font-weight: 600; }
+.markdown-body a { color: #0ea5e9; text-decoration: none; }
+.markdown-body a:hover { text-decoration: underline; }

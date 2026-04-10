@@ -1,0 +1,12 @@
+{
+  "name": "product-frame-ai",
+  "version": "1.0.0",
+  "description": "AI驱动的产品管理平台",
+  "scripts": {
+    "start": "node proxy-server.js",
+    "dev": "npx serve ."
+  },
+  "keywords": ["product-management", "ai", "prd"],
+  "author": "",
+  "license": "MIT"
+}
